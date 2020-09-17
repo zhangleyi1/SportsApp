@@ -13,14 +13,14 @@
         android:layout_weight="1"
         tools:ignore="Suspicious0dp" />
 
-    <BottomBarLayout
+    <com.example.sportapp.view.BottomBarLayout
         android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="@color/color_F3F5F4"
-        >
+        tools:ignore="MissingClass">
 
-        <com.chaychan.library.BottomBarItem
+        <com.example.sportapp.view.BottomBarLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -33,10 +33,10 @@
             app:itemMarginTop="-5dp"
             app:openTouchBg="true"
             app:touchDrawable="@drawable/selector_bottom_tab"
-            />
+            tools:ignore="MissingPrefix" />
 
 
-        <com.chaychan.library.BottomBarItem
+        <com.example.sportapp.view.BottomBarLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -49,9 +49,9 @@
             app:itemMarginTop="-5dp"
             app:openTouchBg="true"
             app:touchDrawable="@drawable/selector_bottom_tab"
-            />
+            tools:ignore="MissingPrefix" />
 
-        <com.chaychan.library.BottomBarItem
+        <com.example.sportapp.view.BottomBarLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -64,9 +64,9 @@
             app:itemMarginTop="-5dp"
             app:openTouchBg="true"
             app:touchDrawable="@drawable/selector_bottom_tab"
-            />
+            tools:ignore="MissingPrefix" />
 
-        <com.chaychan.library.BottomBarItem
+        <com.example.sportapp.view.BottomBarLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -79,6 +79,6 @@
             app:itemMarginTop="-5dp"
             app:openTouchBg="true"
             app:touchDrawable="@drawable/selector_bottom_tab"
-            />
-    </BottomBarLayout>
+            tools:ignore="MissingPrefix" />
+    </com.example.sportapp.view.BottomBarLayout>
 </LinearLayout>
