@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">SportApp</string>
+    <string name="competition">比赛</string>
+    <string name="news">资讯</string>
+    <string name="community">社区</string>
+    <string name="mine">我的</string>
+    <string name="btn_choose_text">筛选</string>
+    <string name="btn_soccer_text">足球</string>
+    <string name="btn_baseketball_text">篮球</string>
 </resources>

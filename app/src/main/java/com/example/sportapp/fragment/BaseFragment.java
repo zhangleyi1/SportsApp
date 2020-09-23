@@ -13,16 +13,16 @@ public abstract class BaseFragment extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(getContentView(), container, false);
-        initView();
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View rootView = inflater.inflate(getContentView(),container,false);
+        initView(rootView);
         initData();
         return rootView;
     }
 
     protected abstract void initData();
 
-    protected abstract void initView();
+    protected abstract void initView(View view);
 
     abstract protected int getContentView();
 }

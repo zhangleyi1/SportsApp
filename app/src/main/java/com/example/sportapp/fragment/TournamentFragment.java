@@ -1,6 +1,7 @@
 package com.example.sportapp.fragment;
 
-import com.example.sportapp.BaseActivity;
+import android.view.View;
+
 import com.example.sportapp.R;
 
 public class TournamentFragment extends BaseFragment {
@@ -11,7 +12,7 @@ public class TournamentFragment extends BaseFragment {
     }
 
     @Override
-    protected void initView() {
+    protected void initView(View view) {
 
     }
 

@@ -15,7 +15,7 @@ public class MainTabAdapter extends FragmentStatePagerAdapter {
 
     @SuppressLint("WrongConstant")
     public MainTabAdapter(List<Fragment> fragmentList, FragmentManager fm) {
-        super(fm, 0);
+        super(fm);
         mFragment = fragmentList;
     }
 

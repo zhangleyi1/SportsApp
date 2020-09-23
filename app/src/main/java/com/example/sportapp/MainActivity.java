@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import com.example.sportapp.adapter.MainTabAdapter;
@@ -26,6 +27,7 @@ public class MainActivity extends BaseActivity {
     private MainTabAdapter mMainTabAdapter;
     private NoScrollViewPager mViewPager;
     private BottomBarLayout mBottomBarLayout;
+    private String TAG = MainActivity.class.getSimpleName();
 
     @Override
     protected int getContentView() {
@@ -48,11 +50,12 @@ public class MainActivity extends BaseActivity {
         mFragment.add(new SelfFragment());
         mMainTabAdapter = new MainTabAdapter(mFragment, getSupportFragmentManager());
         mViewPager.setAdapter(mMainTabAdapter);
+        mViewPager.setOffscreenPageLimit(mFragment.size());
         mBottomBarLayout.setViewPager(mViewPager);
         mBottomBarLayout.setOnItemSelectedListener(new BottomBarLayout.OnItemSelectedListener() {
             @Override
             public void onItemSelected(BottomBarItem var1, int var2) {
-
+                Log.d(TAG, "zly --> onItemSelected var2:" + var2);
             }
         });
     }

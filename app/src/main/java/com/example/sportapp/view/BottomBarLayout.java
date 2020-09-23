@@ -5,6 +5,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 
@@ -14,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BottomBarLayout extends LinearLayout implements ViewPager.OnPageChangeListener {
+    private String TAG = "BottomBarLayout";
     private static final String STATE_INSTANCE = "instance_state";
     private static final String STATE_ITEM = "state_item";
     private ViewPager mViewPager;
